@@ -5,16 +5,17 @@
 // inseriti. Esegui questo programma in due versioni, con il for
 // e con il while.
 
-var numero;
+var totale = 0;
 
 for (var i = 1; i < 6; i++) {
 
-  numero = parseInt(prompt(i + " Inserisci un numero"));
+  var numero = parseInt(prompt(i + " Inserisci un numero"));
 
-  while (isNaN(numero) == true) {
-    numero = parseInt(prompt("Devi inserire un numero"));
+  while (isNaN(numero)) {
+  numero = parseInt(prompt(i + "Devi inserire un numero"));
   }
-  var totale = totale + numero;
+
+  totale = numero + totale;
 
 
 }

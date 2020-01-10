@@ -1,28 +1,3 @@
-// SNACK 3
-
-
-// var numeri = [];
-// var totaleNumeri = 0;
-
-// Il software deve chiedere per 5 volte all'utente di inserire un numero.
-// for (var i = 0; i < 5; i++) {
-//   numeri.push(parseInt(prompt("Inserisci un numero")));
-//   totaleNumeri += numeri[i];
-// }
-// Il programma stampa la somma di tutti i numeri inseriti.
-// console.log(totaleNumeri);
-
-
-
-// var i = 0;
-// var totaleNumeri = 0;
-// while (i < 5) {
-//   var numero = parseInt(prompt("Inserisci un numero"));
-//   totaleNumeri = totaleNumeri + numero;
-//   i++;
-// }
-// console.log(totaleNumeri);
-
 // SNACK 4
 
 //
@@ -44,7 +19,7 @@ for (var i = 0; i < invitati.length; i++) {
     var esito = false;
   }
 }
-if (esito == true) {
+if (esito) {
   console.log("Puoi partecipare alla festa");
 } else {
   console.log("Non puoi partecipare alla festa");

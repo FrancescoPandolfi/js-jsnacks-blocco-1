@@ -4,7 +4,9 @@
 // indicato dall’utente.
 
 var n = parseInt(prompt("Inserisci un numero"));
-for (var i = 0; i < n; i++) {
-var cubo = i * i * i;
-console.log(cubo);
+
+for (var i = 1; i < n+1; i++) {
+
+  var cubo = Math.pow(i, 3);
+  console.log(cubo);
 }
