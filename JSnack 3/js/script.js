@@ -1,21 +1,22 @@
-// SNACK 4
-
+// SNACK 3
 //
-// In un array sono contenuti i nomi degli invitati alla festa del
-// grande Gatsby, chiedi all’utente il suo nome e comunicagli se
-// può partecipare o no alla festa.
+// Il software deve chiedere per 5 volte all’utente di inserire un
+// numero. Il programma stampa la somma di tutti i numeri
+// inseriti. Esegui questo programma in due versioni, con il for
+// e con il while.
 
+var numero;
 
-var invitati = ["Andrea", "Francesco", "Giacomo", "Marco"];
+for (var i = 1; i < 6; i++) {
 
+  numero = parseInt(prompt(i + " Inserisci un numero"));
 
-var nomeUtente = prompt("Scrivi il tuo nome");
-
-for (var i = 0; i < invitati.length; i++) {
-
-  if (nomeUtente == invitati[i]) {
-    console.log("Puoi partecipare alla festa");
-  } else {
-    console.log("Non puoi partecipare alla festa");
+  while (isNaN(numero) == true) {
+    numero = parseInt(prompt("Devi inserire un numero"));
   }
+  var totale = totale + numero;
+
+
 }
+
+console.log(totale);
